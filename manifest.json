@@ -6,8 +6,8 @@
   "description": "Draw Legacy GME and Legacy Explorer solo RPG emulator cards in a popover.",
   "action": {
     "title": "Legacy GME Decks",
-    "icon": "icon.svg",
-    "popover": "index.html",
+    "icon": "/Legacy-GME-Owlbear/icon.svg",
+    "popover": "/Legacy-GME-Owlbear/index.html",
     "height": 720,
     "width": 400
   }
