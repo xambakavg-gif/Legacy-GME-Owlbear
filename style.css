@@ -1,0 +1,119 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #1c1d22;
+  color: #e8e8ea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 10px 12px 12px;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 8px 6px;
+  background: #2a2b32;
+  border: 1px solid #3a3b44;
+  color: #b8b8bd;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.tab-btn:hover { background: #33343c; }
+
+.tab-btn.active {
+  background: #2f5aa6;
+  border-color: #2f5aa6;
+  color: #ffffff;
+}
+
+.card-stage {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#card-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+  transition: transform 0.12s ease;
+}
+
+.card-stage:active #card-img {
+  transform: scale(0.98);
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9a9aa0;
+  text-align: center;
+  min-height: 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.primary-btn, .secondary-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s, opacity 0.15s;
+}
+
+.primary-btn {
+  flex: 2;
+  background: #3d7a3f;
+  color: white;
+}
+
+.primary-btn:hover { filter: brightness(1.1); }
+.primary-btn:disabled { opacity: 0.5; cursor: default; }
+
+.secondary-btn {
+  flex: 1;
+  background: #3a3b44;
+  color: #e8e8ea;
+}
+
+.secondary-btn:hover { filter: brightness(1.15); }
+
+.footer-note {
+  margin-top: 8px;
+  font-size: 10.5px;
+  color: #6f6f76;
+  text-align: center;
+}

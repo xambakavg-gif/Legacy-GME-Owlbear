@@ -1,0 +1,14 @@
+{
+  "name": "Legacy GME Decks",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "author": "Legacy GME",
+  "description": "Draw Legacy GME and Legacy Explorer solo RPG emulator cards in a popover.",
+  "action": {
+    "title": "Legacy GME Decks",
+    "icon": "/icon.svg",
+    "popover": "/index.html",
+    "height": 720,
+    "width": 400
+  }
+}

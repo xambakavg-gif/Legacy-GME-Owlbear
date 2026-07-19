@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Legacy GME Decks</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="tabs">
+      <button class="tab-btn active" data-deck="gme">Legacy GME</button>
+      <button class="tab-btn" data-deck="explorer">Legacy Explorer</button>
+    </div>
+
+    <div class="card-stage">
+      <img id="card-img" src="images/gme/back.png" alt="card back" />
+    </div>
+
+    <div class="status">
+      <span id="status-text">Shuffled &middot; 36 cards ready</span>
+    </div>
+
+    <div class="controls">
+      <button id="draw-btn" class="primary-btn">Draw Card</button>
+      <button id="shuffle-btn" class="secondary-btn" title="Reshuffle the deck">Reshuffle</button>
+    </div>
+
+    <div class="footer-note">Tip: click the card to flip it back to its face-down side.</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
